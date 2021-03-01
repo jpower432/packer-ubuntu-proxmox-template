@@ -2,7 +2,7 @@
 	"builders": [
 		{
 			"type": "proxmox",
-			"proxmox_url": "https://{{user `proxmox_host`}}/api2/json",
+			"proxmox_url": "https://{{user `proxmox_host`}}:{{user `proxmox_port`}}/api2/json",
 			"insecure_skip_tls_verify": true,
 			"username": "{{user `proxmox_api_user`}}",
 			"password": "{{user `proxmox_api_password`}}",
